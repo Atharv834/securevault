@@ -213,9 +213,9 @@ const App = () => {
                             </p>
                         </div>
                         <div className="flex flex-col md:row items-center justify-center gap-8">
-                            <button className="px-12 py-6 rounded-2xl bg-obsidian-950 text-accent-primary font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-[0_20px_40px_-10px_rgba(0,0,0,0.4)]">
+                            <a href="./SecureVault-Setup-1.0.0.exe" download className="px-12 py-6 rounded-2xl bg-obsidian-950 text-accent-primary font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-[0_20px_40px_-10px_rgba(0,0,0,0.4)]">
                                 Download for Windows
-                            </button>
+                            </a>
                             <div className="relative">
                                 <button className="px-12 py-6 rounded-2xl bg-black/5 text-obsidian-950/50 font-black text-xl cursor-not-allowed border-2 border-dashed border-obsidian-950/20" disabled>
                                     Linux .AppImage

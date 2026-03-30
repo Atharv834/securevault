@@ -38,12 +38,12 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-4 mt-4">
-                        <button className="group relative px-8 py-4 rounded-xl bg-accent-primary text-obsidian-950 font-bold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_-5px_rgba(0,242,255,0.5)]">
+                        <a href="./SecureVault-Setup-1.0.0.exe" download className="group relative px-8 py-4 rounded-xl bg-accent-primary text-obsidian-950 font-bold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_-5px_rgba(0,242,255,0.5)]">
                             <span className="flex items-center gap-2">
                                 <Download className="w-5 h-5" />
                                 Get SecureVault
                             </span>
-                        </button>
+                        </a>
                         <button className="px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-semibold transition-all hover:bg-white/10 glass">
                             <span className="flex items-center gap-2">
                                 <ExternalLink className="w-4 h-4 text-zinc-400 group-hover:text-white" />
