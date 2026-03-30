@@ -26,7 +26,7 @@ const Header = () => {
             <div className="container max-w-7xl mx-auto flex items-center justify-between">
                 <a href="#" className="flex items-center gap-3 group">
                     <img 
-                        src="/logo.png" 
+                        src="./logo.png" 
                         alt="SecureVault Logo" 
                         className="w-10 h-10 rounded-xl shadow-[0_0_20px_-5px_#00f2ff] group-hover:scale-105 transition-transform" 
                     />
@@ -63,7 +63,7 @@ const Footer = () => {
                     <div className="col-span-2 space-y-6">
                         <div className="flex items-center gap-3">
                             <img 
-                                src="/logo.png" 
+                                src="./logo.png" 
                                 alt="SecureVault Logo" 
                                 className="w-8 h-8 rounded-lg" 
                             />
