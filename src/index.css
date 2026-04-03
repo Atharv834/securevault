@@ -14,6 +14,14 @@
 
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-float: float 6s ease-in-out infinite;
+  --animate-glitch-1: glitch-1 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  --animate-glitch-2: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
 }
 
 @layer base {
@@ -41,7 +49,7 @@
   }
 
   body {
-    background-color: var(--color-obsidian-950);
+    background-color: #050505;
     color: var(--color-obsidian-100);
     @apply antialiased selection:bg-accent-primary selection:text-obsidian-950;
     overflow-x: hidden;
@@ -68,4 +76,26 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes glitch-1 {
+  0%   { clip-path: inset(40% 0 61% 0); transform: translate(-2px, 2px); }
+  20%  { clip-path: inset(92% 0 1% 0); transform: translate(1px, -1px); }
+  40%  { clip-path: inset(43% 0 1% 0); transform: translate(-1px, 1px); }
+  60%  { clip-path: inset(25% 0 58% 0); transform: translate(2px, -2px); }
+  80%  { clip-path: inset(54% 0 7% 0); transform: translate(-1px, 1px); }
+  100% { clip-path: inset(58% 0 43% 0); transform: translate(0); }
+}
+
+@keyframes glitch-2 {
+  0%   { clip-path: inset(25% 0 58% 0); transform: translate(2px, -2px); }
+  20%  { clip-path: inset(54% 0 7% 0); transform: translate(-1px, 1px); }
+  40%  { clip-path: inset(58% 0 43% 0); transform: translate(0); }
+  60%  { clip-path: inset(40% 0 61% 0); transform: translate(-2px, 2px); }
+  80%  { clip-path: inset(92% 0 1% 0); transform: translate(1px, -1px); }
+  100% { clip-path: inset(43% 0 1% 0); transform: translate(-1px, 1px); }
+}
+
+@keyframes spin-border {
+  to { --border-angle: 360deg; }
 }
